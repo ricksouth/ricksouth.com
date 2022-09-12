@@ -1,0 +1,227 @@
+/*
+	Palette:
+		background: #424254;
+		links: #64908A;
+		nav: #E8CAA4;
+		close: #CC2A41;
+*/
+
+body {
+	font-family: "PT";
+}
+a {
+	text-decoration: none;
+}
+.home.wrapper a:hover {
+	filter: brightness(125%);
+}
+
+
+.homelink:hover {
+	cursor: pointer;
+	filter: brightness(80%);
+}
+.hidden {
+	position: fixed;
+	left: 200%;
+	opacity: 0;
+}
+.preventscroll {
+	overflow: hidden;
+}
+.mimg:hover {
+	cursor: pointer;
+}
+
+.wrapper {
+	top: 0px;
+}
+.middle {
+	text-align: center;
+}
+.middle .links h1 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	font-size: 30px;
+	/*text-decoration: underline;*/
+}
+.middle .links a {
+	padding-right: ;
+	font-size: 20px;
+}
+.middle .links br {
+	display: none;
+}
+.middle .links img {
+	border-radius: 10px;
+}
+
+.header p {
+	font-family: "HandWritten", serif;
+	font-size: 50px;
+}
+.home.wrapper .header img:not(.arrow) {
+	width: 75%;
+	max-width: 200px;
+}
+.header .arrow {
+	position: absolute;
+
+	height: 120px;
+	width: auto;
+
+	margin-top: -35px;
+	margin-left: -90px;
+}
+.description {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.description p {
+	font-size: 17px;
+	margin-top: 8px;
+	margin-bottom: 0px;
+}
+
+.about img.me { /* Makes downscaled image sharper */
+	image-rendering: -moz-crisp-edges;			/* Firefox */
+	image-rendering: -o-crisp-edges;			/* Opera */
+	image-rendering: -webkit-optimize-contrast;	/* Webkit (non-standard naming) */
+	image-rendering: crisp-edges;
+	-ms-interpolation-mode: nearest-neighbor;	/* IE (non-standard property) */
+}
+
+.home.wrapper .middle:not(.scroll) {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+@media only screen and (max-width: 420px) {
+	.home.wrapper {
+		position: absolute;
+		left: 5%;
+
+		width: 90%;
+	}
+	.home.wrapper .middle {
+		position: relative;
+
+		height: 100%;
+		width: 100%;
+	}
+	.switch-wrapper {
+		margin-top: 10px;
+		margin-bottom: -15px;
+	}
+	.right {
+		position: relative;
+		display: block;
+
+		height: 600px;
+		width: auto;
+	}
+	.header p {
+		margin-top: 10px;
+		margin-bottom: 0;
+	}
+}
+@media only screen and (min-width: 420px) {
+	.home.wrapper {
+		position: absolute;
+		left: 0;
+
+		height: 100vh;
+		width: 100vw;
+
+		padding: 0;
+		margin: 0;
+	}
+	.home.wrapper .middle {
+		position: absolute;
+		left: calc(50% - 200px);
+		z-index: 2;
+
+		height: 100%;
+		width: 400px;
+	}
+	.middle.scroll {
+		overflow-x: visible;
+		overflow-y: scroll;
+	}
+	.middle.scroll .switch-wrapper {
+		margin-top: 10px;
+	}
+	.middle .about {
+		display: block;
+		padding-bottom: 10px;
+	}
+	.right {
+		position: absolute;
+		float: right;
+
+		height: 100%;
+		width: 550px;
+
+		margin-left: 250px;
+	}
+	.header p {
+		margin-top: 0px;
+		margin-bottom: 0;
+	}
+}
+
+.noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.noselect label {
+	outline: 0;
+}
+
+/* Start Modal */
+.modal {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 5;
+
+	width: 100%;
+	height: 100%;
+
+	background-color: rgba(0, 0, 0, 0.85);
+}
+.modal .imagewrapper {
+	position: absolute;
+	display: flex;
+	top: 6%;
+	left: 5%;
+	z-index: 6;
+
+	height: 88%;
+	width: 90%;
+
+	justify-content: center;
+	align-items: center;
+}
+.modal .imagewrapper img {
+	position: relative;
+
+	max-width: 100%;
+	max-height: 100%;
+}
+.modal p {
+	position: absolute;
+	bottom: 8px;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+/* End Modal */

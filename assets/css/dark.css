@@ -1,0 +1,113 @@
+/* Main */
+body.dark {
+	background-color: #3e4247;
+	color: white;
+	font-weight: 580;
+}
+.dark a {
+	color: #64908A;
+}
+.dark button {
+	color: white;
+	border: 1px solid white;
+}
+.dark .navigation li {
+	color: #E8CAA4;
+}
+.dark .navigation li:before {
+	background-color: #E8CAA4;
+}
+.dark .navigation .selected:before {
+	background-color: #E8CAA4;
+}
+.dark .switch {
+	border: 2px solid #3e4247;
+}
+.dark .settings label,legend,.close {
+	color: white;
+}
+
+@media only screen and (max-width: 810px) {
+	.dark .navigationwrapper:not(.fixed) .navigation {
+		border-top: 1px dashed white;
+	}
+	.dark .navigationwrapper.fixed {
+		background-color: #3e4247;
+	}
+}
+@media only screen and (min-width: 811px) {
+	.dark .middle {
+
+	}
+	.navigationwrapper.dark {
+		background-color: #3e4247;
+	}
+	.navigationwrapper.dark .navigation {
+		background-color: #3e4247;
+	}
+}
+
+/* Entries */
+.dark #blog article {
+	border-bottom: 1px dashed white;
+}
+.dark .subscribecontent {
+	border: 1px dashed white;
+}
+.dark .subscribecontent input {
+	color: white;
+	border-bottom: 2px solid white;
+}
+.dark .subscribecontent input::placeholder {
+	color: #C8C8C8;
+}
+.dark .settings {
+	color: black;
+}
+.dark .artitle:hover {
+	filter: brightness(75%);
+}
+
+/* Portfolio */
+.dark .portfolioselector li.unselected {
+	filter: brightness(50%);
+}
+.dark .portfolioselector.notouch.hover li:not(.unselected):hover {
+	filter: brightness(50%);
+}
+.dark .portfolioselector.notouch.hover li.unselected:hover {
+	filter: brightness(100%);
+}
+
+.dark .portfolioselector li {
+	border: 2px solid white;
+}
+.dark .portfolioitem p {
+	color: white;
+}
+.dark .portfolioitem:not(:last-child) {
+	border-bottom: 1px dashed white;
+}
+.dark .porttitle::after {
+	background: #64908A;
+}
+
+/* Now Page */
+.dark .contentwrapper .now .nowpentry {
+	color: #64908A;
+}
+.dark .contentwrapper .now .nowpentry.active {
+	filter: brightness(150%);
+}
+.dark .contentwrapper .now .nowpentry:not(.active):hover {
+	filter: brightness(150%);
+}
+
+/* Contact me */
+.contactwrapper.dark {
+	background-color: #3e4247;
+}
+.contactwrapper.dark .contactform {
+	border-top: 1px dashed white;
+	border-left: 1px dashed white;
+}

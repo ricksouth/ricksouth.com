@@ -1,0 +1,81 @@
+@media only screen and (max-width: 270px) {
+	.donation.wrapper .middle .shield {
+		height: auto !important;
+		display: block !important;
+		width: 100% !important;
+	}
+}
+@media only screen and (max-width: 360px) {
+	.donation.wrapper .middle img.gif.rain {
+		position: absolute !important;
+		left: calc(50% - 150px) !important;
+	}
+	.donation.wrapper .middle .separator {
+		height: 214px;
+		width: 100%;
+	}
+	.donation.wrapper .middle img.gif.thumb {
+		width: 90vw;
+	}
+}
+@media only screen and (max-width: 680px) {
+	.donation.wrapper {
+		position: absolute;
+		left: 5%;
+
+		width: 90%;
+	}
+	.donation.wrapper .middle {
+		position: relative;
+
+		width: 100%;
+	}
+}
+@media only screen and (min-width: 680px) {
+	.donation.wrapper {
+		position: absolute;
+		left: 0;
+
+		height: 100vh;
+		width: 100vw;
+
+		padding: 0;
+		margin: 0;
+	}
+	.donation.wrapper .middle {
+		position: absolute;
+		left: calc(50% - 330px);
+		z-index: 2;
+
+		width: 660px;
+	}
+}
+
+.donation.wrapper .middle {
+	padding-bottom: 40px;
+}
+.donation.wrapper .middle h1 {
+	margin-bottom: 8px;
+}
+.donation.wrapper .middle img.gif {
+	position: relative;
+}
+.donation.wrapper .middle img.gif.rain {
+	width: 300px;
+	height: 210px;
+}
+
+.donation.wrapper .middle .shieldw {
+	display: inline;
+	padding: 3px;
+}
+.donation.wrapper .middle .shield {
+	height: 60px;
+	padding: 5px 0px 5px 0px;
+
+	border-radius: 10px;
+}
+.donation.wrapper .middle .shield:hover {
+	cursor: pointer;
+	filter: brightness(80%);
+}

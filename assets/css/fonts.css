@@ -1,0 +1,24 @@
+@font-face {
+	font-family: 'Stylish';
+	font-style: normal;
+	font-weight: 400;
+	src: local('StylishRegular'), local('Stylish-Regular'),
+		url('/assets/external/fonts/stylish.woff2') format('woff2'),
+		url('/assets/external/fonts/stylish.woff') format('woff');
+}
+@font-face {
+	font-family: 'HandWritten';
+	font-style: normal;
+	font-weight: 400;
+	src: local('HandWritten'), local('HandWritten-Regular'),
+		url('/assets/external/fonts/handwritten.woff2') format('woff2'),
+		url('/assets/external/fonts/handwritten.woff') format('woff');
+}
+@font-face {
+	font-family: 'PT';
+	font-style: normal;
+	font-weight: 400;
+	src: local('PT'), local('PT-Regular'),
+		url('/assets/external/fonts/pt.woff2') format('woff2'),
+		url('/assets/external/fonts/pt.woff') format('woff');
+}

@@ -1,0 +1,124 @@
+/*
+	Text: #202c39;
+	URL: #3ea9e0;
+	Nav : #33569b;
+*/
+
+/* Main */
+body.light {
+	background-color: white;
+	color: #202c39;
+}
+.light a {
+	color: #3ea9e0;
+}
+.light button {
+	color: black;
+	border: 1px solid #3e4247;
+}
+.light .navigation li {
+	color: #33569b;
+	font-weight: bolder;
+}
+.light .navigation li:before {
+	background-color: #33569b;
+}
+.light .navigation .selected:before {
+	background-color: #33569b;
+}
+.light .switch {
+	border: 2px solid white;
+}
+.light .settings legend, 
+.light .settings .close {
+	color: #202c39;
+}
+
+@media only screen and (max-width: 810px) {
+	.light .navigationwrapper:not(.fixed) .navigation {
+		border-top: 1px dashed #202c39;
+	}
+	.light .navigationwrapper.fixed {
+		background-color: white;
+	}
+}
+@media only screen and (min-width: 811px) {
+	.light .middle {
+
+	}
+	.navigationwrapper.light {
+		background-color: white;
+	}
+	.navigationwrapper.light .navigation {
+		background-color: white;
+	}
+}
+
+/* Entries */
+.light #blog article {
+	border-bottom: 1px dashed #202c39;
+}
+.light .subscribecontent {
+	border: 1px dashed #202c39;
+}
+.light .subscribecontent input {
+	color: #202c39;
+	border-bottom: 2px solid #202c39;
+}
+.light .subscribecontent input::placeholder {
+	color: #C8C8C8;
+}
+.light .settings {
+	color: black;
+}
+.light .artitle:hover {
+	filter: brightness(200%);
+}
+
+/* Portfolio */
+.light .portfolioselector li.unselected {
+	border: 2px solid lightgrey;
+	color: lightgrey;
+}
+.light .portfolioselector.notouch.hover li:not(.unselected):hover {
+	border: 2px solid lightgrey;
+	color: lightgrey;
+}
+.light .portfolioselector.notouch.hover li.unselected:hover {
+	border: 2px solid #202c39;
+	color: #202c39;
+}
+
+.light .portfolioselector li {
+	border: 2px solid #202c39;
+}
+.light .portfolioitem p {
+	color: #202c39;
+}
+.light .portfolioitem:not(:last-child) {
+	border-bottom: 1px dashed black;
+}
+.light .porttitle::after {
+	background: #3ea9e0;
+}
+
+/* Now Page */
+.light .contentwrapper .now .nowpentry {
+	color: #3ea9e0;
+}
+.light .contentwrapper .now .nowpentry.active {
+	filter: brightness(50%);
+}
+.light .contentwrapper .now .nowpentry:not(.active):hover {
+	filter: brightness(50%);
+}
+
+
+/* Contact me */
+.contactwrapper.light {
+	background-color: white;
+}
+.contactwrapper.light .contactform {
+	border-top: 1px dashed black;
+	border-left: 1px dashed black;
+}
