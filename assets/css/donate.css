@@ -1,3 +1,7 @@
+body.noscroll {
+	overflow: hidden;
+}
+
 @media only screen and (max-width: 270px) {
 	.donation.wrapper .middle .shield {
 		height: auto !important;
@@ -103,4 +107,39 @@
 .donation.wrapper .middle .shield:hover {
 	cursor: pointer;
 	filter: brightness(80%);
+}
+
+.donation.wrapper .middle .guide {
+	margin: 2px 0px 30px 0px;
+
+	color: #009BE3;
+}
+.donation.wrapper .middle .guide:hover {
+	cursor: pointer;
+	filter: brightness(1.2);
+}
+
+.donation.wrapper .members {
+	margin-top: 50px;
+}
+.donation.wrapper .membertable {
+	position: relative;
+	left: 5%;
+	width: 90%;
+
+	text-align: center;
+}
+.donation.wrapper .members h2 {
+	margin-bottom: 8px;
+	color: #1ABDF0;
+}
+.donation.wrapper .membertable td p {
+	display: inline;
+	margin: 0;
+
+	font-size: 20px;
+	color: #F17C54;
+}
+.donation.wrapper .membertable td p:hover {
+	cursor: url("/assets/images/heart_pointer.png"),auto;
 }
